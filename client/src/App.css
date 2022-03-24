@@ -1,0 +1,14 @@
+:root{
+  --primaryColor:#191919;
+  --secondaryColor: #C84B31;
+  --tertiaryColor:#2D4263;
+  --quaternaryColor:#ECDBBA;
+}
+
+
+.app{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

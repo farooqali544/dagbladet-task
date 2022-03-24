@@ -1,0 +1,57 @@
+@import "../../App.css";
+
+.container{
+    background-color: var(--primaryColor) ;
+    min-height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .wrapper{
+    max-width: 1440px;
+    color: white;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2.2rem;
+}
+
+.links{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.links a{
+    all: unset;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.links a::after{
+    content: "";
+    height: 4px;
+    width: 0;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--secondaryColor);
+    transition: all 0.3s ease;
+}
+
+.links a:hover::after{
+    width: 100%;
+}
+
+.links a:hover{
+    color: var(--secondaryColor);
+}
+
+.links > #activeLink{
+    color: var(--secondaryColor);
+}
